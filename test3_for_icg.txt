@@ -1,0 +1,25 @@
+
+sum = 0
+i = 0
+
+L0: 
+T0 = i < 10
+T1 = not T0
+if T1 goto L1
+goto L2
+
+L3: 
+T2 = i + 1
+hello = T2 T0
+hello T2 = T2
+i = T2
+goto L0 
+
+L2: 
+T3 = sum + 1
+sum = T3
+goto L3 
+
+L1: 
+Input Exhausted!
+
